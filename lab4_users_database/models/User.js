@@ -53,3 +53,14 @@ const UserSchema = new mongoose.Schema({
     }
   }
 })
+
+UserSchema.post('validate', (doc) => {
+  console.log(`%s has been validated (but not saved)`, doc._id)
+})
+
+UserSchema.post('save', (doc) => {
+  console.log(`%s has been saved`, doc._id)
+})
+
+const Users = mongoose.model('Users', UserSchema);
+module.exports = Users;
