@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const userRouter = require('./routes/UserRoutes');
 
 const app = express();
-app.user(express.json());
+app.use(express.json());
 
 //connection string
 mongoose.connect('mongodb+srv://Nick:Boon1997@cluster0.3uodd.mongodb.net/gbc_full_stack?retryWrites=true&w=majority', {
