@@ -10,6 +10,12 @@ app.use(express.json());
 mongoose.connect('mongodb+srv://Nick:Boon1997@cluster0.3uodd.mongodb.net/gbc_full_stack?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
+}, (err) => {
+  if (err) {
+    console.log(err)
+  } else {
+    console.log('Connected to database')
+  }
 })
 
 app.use(restaurantsRouter);
