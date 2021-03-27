@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { RemoveSpacesPipe } from './remove-spaces.pipe';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    RemoveSpacesPipe
+    RemoveSpacesPipe,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
