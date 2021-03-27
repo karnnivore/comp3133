@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { RemoveSpacesPipe } from './remove-spaces.pipe';
 import { InputFormatDirective } from './input-format.directive';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     RemoveSpacesPipe,
-    InputFormatDirective
+    InputFormatDirective,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
